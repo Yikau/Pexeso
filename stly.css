@@ -1,0 +1,124 @@
+body{
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+
+* , *::after , * ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.nadpis{
+    font-family: title-font;
+    text-align: center;
+    font-size: 50px;
+    color: gray;
+    font-weight: normal;
+    font-family: Tahoma, sans-serif;
+    margin-top: 30px;
+}
+
+.podnadpis{
+    font-size: 30px;
+    color: gray;
+    text-align: center;
+
+}
+
+
+.timer{
+    font-family: title-font;
+    text-align: center;
+    font-size: 4em;
+    color: gray;
+    font-weight: normal;
+}
+
+.content {
+    background-color: white;
+    padding: 30px 50px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+.close {
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    overflow: auto;
+    background-color: rgba(211,211,211,0.5);
+    color: #fff;
+    visibility: hidden;
+    display: grid;
+    align-items: center;
+}
+
+#cards-container{
+    width: 660px;
+    min-height: 300px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0px auto;
+}
+#cards-container div{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 125px;
+    height: 125px;
+    margin-bottom: 20px;
+    line-height:125px;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#gameWin{
+    display: none;
+}
+.confirm{
+    font-size: 0;
+    width: 50%;
+    margin: 0px auto;
+}
+.confirm button{
+    display:  inline-block;
+    width: 30%;
+    margin:5% ;
+    background-color: lightgray;
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
